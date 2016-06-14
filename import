@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function srcif() {
+  export DIR="/home/$USER/.dotfiles/$@.d"
+  if [ -d $DIR ]; then
+    source "$DIR/import"
+  fi
+}
+
+
+srcif alias
+srcif path

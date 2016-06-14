@@ -1,0 +1,3 @@
+#!/bin/bash
+source "$DIR/local_bin"
+source "$DIR/node"

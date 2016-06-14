@@ -1,0 +1,2 @@
+NODE_VER=`cat ~/.current_node`
+PATH="$PATH:/home/$USER/Programs/node-$NODE_VER/bin"

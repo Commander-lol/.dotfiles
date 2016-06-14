@@ -1,0 +1,7 @@
+alias npig="npm install -g"
+alias npis="npm install --save"
+alias npid="npm install --save-dev"
+alias npms="npm start"
+alias npdev="npm run dev"
+alias nov="node -v"
+alias npv="npm --version"
