@@ -1,1 +1,6 @@
+pm2sfunc() {
+  pm2 start "$1" --name "$2" -- "${@:3}"
+}
 alias pm2r="pm2 restart"
+alias pm2l="pm2 logs"
+alias pm2s="pm2sfunc"

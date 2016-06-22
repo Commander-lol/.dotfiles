@@ -1,0 +1,5 @@
+composerfunc(){
+  php /home/commander-lol/Programs/Composer/composer.phar "$@"
+}
+
+alias composer="composerfunc"

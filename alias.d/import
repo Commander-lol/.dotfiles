@@ -1,6 +1,8 @@
 #!/bin/bash
+
 source "$DIR/git"
 source "$DIR/node"
 source "$DIR/mysql"
 source "$DIR/pm2"
 source "$DIR/radweb"
+source "$DIR/php"
