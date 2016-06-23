@@ -5,3 +5,14 @@ alias npms="npm start"
 alias npdev="npm run dev"
 alias nov="node -v"
 alias npv="npm --version"
+
+set_node_func(){
+  nodever=$1
+  if [ `expr match "$nodever" '^v'` -eq 1 ]; then
+    nodever=${nodever:1}
+  fi
+  echo "export NODE_VER='v$nodever'" > ~/.dotfiles/env.d/NODE_VER
+}
+
+alias setnode="set_node_func"
+alias resetnode="set_node_func $(nov)"

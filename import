@@ -7,6 +7,6 @@ function srcif() {
   fi
 }
 
-
-srcif alias
+srcif env
 srcif path
+srcif alias
