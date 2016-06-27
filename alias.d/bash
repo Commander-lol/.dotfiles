@@ -7,3 +7,16 @@ up_func(){
 }
 
 alias up="up_func"
+
+cdh_func(){
+ cd "$HOME/$1"
+}
+
+alias cdh="cdh_func"
+
+mkcd_func(){
+ mkdir "$1"
+ cd "$1"
+}
+
+alias mkcd="mkcd_func"
