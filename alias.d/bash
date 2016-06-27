@@ -1,0 +1,9 @@
+up_func(){
+  N=$1
+  for i in $(seq 1 $N);
+  do
+    cd ..;
+  done
+}
+
+alias up="up_func"
