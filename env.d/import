@@ -1,3 +1,4 @@
 #!/bin/bash
 
 source "$DIR/NODE_VER"
+source "$DIR/DOTFILES"
