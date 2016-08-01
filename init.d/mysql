@@ -1,0 +1,4 @@
+#!/bin/bash
+cd "$DOTFILES/init.d"
+echo "Settings file :: mysql_settings.sql"
+mysql -u root -p

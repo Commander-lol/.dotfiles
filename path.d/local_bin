@@ -1,1 +1,1 @@
-PATH="$PATH:/home/$USER/.lbin"
+PATH="$PATH:$DOTFILES/bin.d"

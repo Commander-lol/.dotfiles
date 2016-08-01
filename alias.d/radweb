@@ -1,1 +1,7 @@
 alias dbd="./devbuild && ./deploy"
+
+cd_to_rad_site() {
+  cd "$HOME/RadHome/sites/$1"
+}
+
+alias crad="cd_to_rad_site"

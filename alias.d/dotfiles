@@ -1,0 +1,2 @@
+alias dfinit='bash "$DOTFILES/init.d/run.sh"'
+alias cdot='cd $DOTFILES'

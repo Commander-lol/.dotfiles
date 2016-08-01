@@ -1,0 +1,13 @@
+#! /bin/bash
+cat <<'DOC' > $1
+import React, {PropTypes} from 'react'
+const el = ({}) => (
+
+)
+
+el.propTypes = {
+
+}
+
+export default el
+DOC

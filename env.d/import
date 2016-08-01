@@ -2,3 +2,4 @@
 
 source "$DIR/NODE_VER"
 source "$DIR/DOTFILES"
+source "$DIR/mysql"
