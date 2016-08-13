@@ -1,0 +1,15 @@
+#! /bin/bash
+mkto "$1"
+cat <<'DOC' > $1
+import React, {Component, PropTypes} from 'react'
+
+export default class el extends Component {
+	static propTypes = {
+
+	}
+
+	render() {
+
+	}
+}
+DOC

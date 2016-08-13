@@ -45,3 +45,6 @@ alias glunch="git ls-files -v | grep -e '^[hsmrck]'"
 alias gauch="git update-index --assume-unchanged"
 alias gnauch="git update-index --no-assume-unchanged"
 #alias groot="`echo git root` && cd `git root`"
+
+# Git remove untracked
+alias grum="git status --porcelain -u | sed s/\?\?\ // | xargs rm $1"

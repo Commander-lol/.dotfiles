@@ -1,0 +1,3 @@
+#! /bin/bash
+cd "$HOME/RadHome/sites/$1"
+pm2 start npm --name "$1" -- start

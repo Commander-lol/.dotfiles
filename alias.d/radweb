@@ -1,7 +1,10 @@
 alias dbd="./devbuild && ./deploy"
 
-cd_to_rad_site() {
+crad() {
   cd "$HOME/RadHome/sites/$1"
 }
 
-alias crad="cd_to_rad_site"
+rads() {
+  crad "$1"
+  pm2s npm "$1" start
+}
