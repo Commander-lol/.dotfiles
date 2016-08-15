@@ -1,4 +1,4 @@
-up_func(){
+up(){
   N=$1
   for i in $(seq 1 $N);
   do
@@ -6,17 +6,15 @@ up_func(){
   done
 }
 
-alias up="up_func"
-
-cdh_func(){
+cdh(){
  cd "$HOME/$1"
 }
 
-alias cdh="cdh_func"
-
-mkcd_func(){
+mkcd(){
  mkdir "$1"
  cd "$1"
 }
 
-alias mkcd="mkcd_func"
+csd(){
+ cd "../$1"
+}
