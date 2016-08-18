@@ -18,3 +18,7 @@ mkcd(){
 csd(){
  cd "../$1"
 }
+
+tsd(){
+ date --date @$1
+}
