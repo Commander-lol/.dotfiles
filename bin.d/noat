@@ -1,0 +1,7 @@
+#! /bin/bash
+if [ $# -gt 1 ]; then
+	TITLE=$2
+else
+	TITLE="Please note"
+fi
+notify-send -i "$DOTFILES/resource.d/ico.png" "$TITLE" "$1"

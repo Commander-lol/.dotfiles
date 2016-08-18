@@ -22,3 +22,7 @@ csd(){
 tsd(){
  date --date @$1
 }
+
+tsdn(){
+ noat "$(tsd $1)" "$1 as a date is:"
+}
