@@ -1,0 +1,17 @@
+#! /bin/bash
+strad() {
+	cd "$HOME/RadHome/sites/$1"
+	pm2 start npm --name "$1" -- start > /dev/null
+	pm2 start grunt --name "$1-grunt" > /dev/null
+}
+strad ib
+strad wms
+strad niche
+
+cd $HOME/Projects/louiscap-api
+pm2 start npm --name lca -- start
+
+cd ../louiscap-react
+pm2 start npm --name lcr -- start
+
+pm2 stop ib ib-grunt wms wms-grunt niche niche-grunt lca lcr
