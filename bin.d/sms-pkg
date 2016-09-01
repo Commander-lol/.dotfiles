@@ -1,0 +1,7 @@
+#! /bin/bash
+PACKAGES=""
+while read PKG; do
+	PACKAGES="$PACKAGES $PKG"
+done < <(sms-pkg-list)
+
+echo "sudo apt install$PACKAGES"

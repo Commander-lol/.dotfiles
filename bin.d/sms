@@ -1,0 +1,10 @@
+#! /bin/bash
+
+################
+# Save My Shit #
+################
+
+mkdir "$HOME/$1"
+sms-ppa > "$HOME/$1/sources.sh"
+sms-pkg > "$HOME/$1/packages.sh"
+echo "./sources.sh; ./packages.sh" > "$HOME/$1/install.sh"
