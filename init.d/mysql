@@ -1,4 +1,4 @@
 #!/bin/bash
 cd "$DOTFILES/init.d"
 echo "Settings file :: mysql_settings.sql"
-mysql -u root -p
+mysql -u root "-p$MYSQL_DEF_PASSWORD" < "mysql_settings.sql"
