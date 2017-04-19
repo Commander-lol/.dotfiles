@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+const fs = require('fs')
+const path = require('path')
+
+let a = process.argv[2]
+let b = process.argv[3]
+
+if (a == null || b == null) {
+  console.error('Must provide two arguments to swap files')
+  process.exit(2)
+}
+
+const cwd = process.cwd()
+
+a = path.join(cwd, a)
+b = path.join(cwd, b)
+
+const slug = Date.now()
+
+fs.rename(a, a + String(slug), e => {
+  if (e) {
+    console.error(e)
+    process.exit(4)
+  }
+  fs.rename(b, a, e2 => {
+    if (e2) {
+      console.error(e2)
+      process.exit(4)
+    }
+    fs.rename(a + String(slug), b, e3 => {
+      if (e3) {
+        console.error(e3)
+        process.exit(4)
+      }
+    })
+  })
+})
+

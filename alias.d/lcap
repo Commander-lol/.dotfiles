@@ -1,1 +1,1 @@
-alias lcstart="cd $HOME/Projects/louiscap-react && pm2s npm lcr start && up && cd louiscap-api && pm2s npm lca start"
+alias lcstart="cd $HOME/Projects/louiscap-client && pm2s npm lcr start && up && cd louiscap-server && pm2s npm lca start"

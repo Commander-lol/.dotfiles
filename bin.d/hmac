@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const crypto = require('crypto')
+const fs = require('fs')
+
+let [,, type, secret, filename, obj] = process.argv
+
+let tohash = ''
+
+if (type === '-s') {
+  type = secret
+  secret = filename
+  tohash = obj
+} else {
+  tohash = fs.readFileSync(filename).toString()
+}
+
+const hmac = crypto.createHmac(type, secret)
+
+hmac.update(tohash)
+
+console.log(hmac.digest('hex'))

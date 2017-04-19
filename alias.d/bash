@@ -19,10 +19,28 @@ csd(){
  cd "../$1"
 }
 
+cdp(){
+ cd "$HOME/Projects/$1"
+}
+
+cdpg(){
+ cd "$HOME/Programs/$1"
+}
+
 tsd(){
  date --date @$1
 }
 
 tsdn(){
  noat "$(tsd $1)" "$1 as a date is:"
+}
+
+alias pricing="xdg-open /home/commander-lol/Projects/prices/index.html 1> /dev/null"
+
+clearn(){
+  N=$1
+  for i in $(seq 1 $N);
+  do
+    clear;
+  done
 }

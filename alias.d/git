@@ -25,7 +25,7 @@ alias gcam="git commit -vam"
 alias gcama="gaa && gcm"
 alias gap="git add -p"
 alias gc="git commit -v"
-alias gm="git merge --no-ff"
+#alias gm="git merge --no-ff"
 alias grb='git rebase -p'
 # alias gps="git push"
 alias gpsall='git push'
@@ -49,3 +49,5 @@ alias gnauch="git update-index --no-assume-unchanged"
 alias gbl="git branch --list"
 # Git remove untracked
 alias grum="git status --porcelain -u | sed s/\?\?\ // | xargs rm $1"
+alias gib="git checkout -b"
+alias gich="git checkout"

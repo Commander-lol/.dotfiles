@@ -1,0 +1,13 @@
+gin() {
+  CDIR=`pwd`
+  cd "$GOPATH"
+  go install "$1"
+  cd "$CDIR"
+}
+
+gus() {
+  CDIR=`pwd`
+  cd "$GOPATH/bin"
+  rm -r $1
+  cd "$CDIR"
+}

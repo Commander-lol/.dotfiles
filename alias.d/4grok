@@ -1,0 +1,11 @@
+alias 4grok="$HOME/Programs/4grok/run.sh"
+
+ibgrok() {
+  pm2 start -f ngrok -name=ibgrok -- http -hostname=ib.4l2.co -region eu 80
+  pm2 start -f ngrok -name=ibapi -- http -hostname=api.ib.4l2.co -region eu 80
+}
+
+wmsgrok() {
+  pm2 start -f /home/commander-lol/Programs/4grok/run.sh --name=wmsgrok -- -subdomain=a2v 80
+  pm2 start -f /home/commander-lol/Programs/4grok/run.sh --name=wbundle -- -subdomain=wbundle 80
+}

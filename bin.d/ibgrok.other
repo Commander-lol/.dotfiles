@@ -1,0 +1,4 @@
+#! /bin/bash
+gnome-terminal -e "$HOME/Programs/4grok/run.sh -subdomain=ib 80"
+gnome-terminal -e "$HOME/Programs/4grok/run.sh -subdomain=api.ib 80"
+

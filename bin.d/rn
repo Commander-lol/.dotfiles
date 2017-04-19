@@ -1,0 +1,10 @@
+#! /bin/bash
+
+DIR=`pwd`
+LOCAL=$(cat "./.lbin" 2>/dev/null)
+
+if [ ${#LOCAL} -gt 0 ] && [[ ${LOCAL: -1} != '/' ]]; then
+	LOCAL="$LOCAL/"
+fi
+
+"$DIR/$LOCAL$1" "${@:2}"

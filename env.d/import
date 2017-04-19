@@ -3,3 +3,5 @@
 source "$DIR/NODE_VER"
 source "$DIR/DOTFILES"
 source "$DIR/mysql"
+source "$DIR/4grok"
+source "$DIR/android"

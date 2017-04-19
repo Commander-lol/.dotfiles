@@ -1,0 +1,4 @@
+rnr(){
+  react-native "run-$1"
+  npm start
+}
